@@ -3,20 +3,30 @@ package com.example.visualstudio.simpleactivity.LearnActivity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.visualstudio.simpleactivity.R;
 import com.gc.materialdesign.views.ButtonRectangle;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
     private final String nameActivityCurrent = getClass().getSimpleName();
+    private TextView tv_WelcomeUser;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ButtonRectangle btnWelcomwe = (ButtonRectangle) findViewById(R.id.activity_main_btn_Welcome);
+        initialzation();
+        setWelcomeUser();
         //Khởi tạo ứng dụng -> onStart
+    }
+    private void initialzation(){
+        tv_WelcomeUser = (TextView) findViewById(R.id.activity_main_tv_showUserInfo);
+        ButtonRectangle btnWelcomwe = (ButtonRectangle) findViewById(R.id.activity_main_btn_Welcome);
     }
     @Override
     protected void onStart() {
@@ -66,5 +76,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickBtnWelcome(View view) {
         startActivity(new Intent(MainActivity.this,DialogActivity.class));
+    }
+
+    private void setWelcomeUser(){
+        Intent intent = getIntent();
+        String userName = intent.getStringExtra("userName");
+        tv_WelcomeUser.setText("Chào mừng: "+userName);
+
+        ArrayList<String> listUserName = intent.getStringArrayListExtra("listUserName");
+       // Toast.makeText(MainActivity.this, listUserName.size(), Toast.LENGTH_SHORT).show();
+        //Log.e("TAG", String.valueOf(listUserName.size()));
+
     }
 }

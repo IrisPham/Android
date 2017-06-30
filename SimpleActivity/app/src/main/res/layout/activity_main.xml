@@ -5,14 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.visualstudio.simpleactivity.LearnActivity.MainActivity">
-
+    <TextView
+        android:id="@+id/activity_main_tv_showUserInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chào mừng: ....."
+        android:textSize="20sp"
+        android:textColor="#1E88E5"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
     <ImageView
         android:id="@+id/activity_main_imv_background"
         android:layout_width="400dp"
         android:layout_height="400dp"
         android:src="@drawable/background"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/activity_main_tv_showUserInfo"
+        android:layout_marginTop="5dp"/>
     <com.gc.materialdesign.views.ButtonRectangle
         android:id="@+id/activity_main_btn_Welcome"
         android:layout_width="wrap_content"

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.visualstudio.simpleactivity.Home.HomeActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:background="#FDCE09">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:src="@drawable/logo_chotot"
+            android:layout_marginLeft="5dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/ic_login_search"
+                android:layout_toStartOf="@+id/activity_login_btn_person"/>
+            <ImageView
+                android:id="@+id/activity_login_btn_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/activity_login_btn_post"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/ic_login_person"/>
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/activity_login_btn_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="#FDCE09"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="18dp"
+                android:text="Đăng tin" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:id="@+id/activity_home_gv_chooserItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="120dp"
+            android:gravity="center"
+            android:numColumns="auto_fit"></GridView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.visualstudio.simpleactivity.LearnActivity.IntentCameraActivity">
+
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/activity_intent_camera_btn_takePicture"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:onClick="onClickBtnTakePicture"
+        android:text="Take a Picture"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/activity_intent_camera_imv_showPicture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_button"
+        android:layout_below="@+id/activity_intent_camera_btn_takePicture" />
+
+</RelativeLayout>

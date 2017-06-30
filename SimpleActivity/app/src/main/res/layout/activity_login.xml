@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.visualstudio.simpleactivity.Login.LoginActivity">
+
+    <EditText
+        android:id="@+id/activity_login_edt_userName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên tài khoản"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/activity_login_edt_userPass"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Nhập mật khẩu"
+        android:layout_marginTop="10dp"
+        />
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/activity_login_btn_intentExplicit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Intent explicit"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickBtnIntentExplicit"/>
+
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/activity_login_btn_intentImplicit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickBtnImplicit"
+        android:text="Intent implicit" />
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/activity_login_btn_intentForResult"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickBtnIntentForResult"
+        android:text="Intent For Result" />
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/activity_login_btn_intentCamera"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Intent Camera"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickBtnIntentCamera"/>
+</LinearLayout>

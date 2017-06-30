@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.visualstudio.simpleactivity.LearnActivity.IntentImplicitItemActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn Intent Implicit"
+        android:textSize="30sp" />
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/activity_intent_implicit_btnActionView"
+        android:text="ACTION_VIEW"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickBtnACTION_VIEW"></com.gc.materialdesign.views.ButtonRectangle>
+
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/activity_intent_implicit_btnSentDTO"
+        android:text="ACTION_SENTDTO"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickBtnACTION_SENTDTO"
+        ></com.gc.materialdesign.views.ButtonRectangle>
+
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/activity_intent_implicit_btnActionCall"
+        android:text="ACTION_CALL"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickBtnACTION_CALL"
+        ></com.gc.materialdesign.views.ButtonRectangle>
+</LinearLayout>

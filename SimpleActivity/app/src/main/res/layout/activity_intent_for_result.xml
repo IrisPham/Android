@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.visualstudio.simpleactivity.LearnActivity.IntentForResultActivity">
+    <TextView
+        android:id="@+id/activity_intent_for_result_tv_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phạm Hoài An"
+        android:textSize="30sp"
+        android:textColor="@android:color/black"/>
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/activity_intent_for_result_btn_editName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickBtnEditName"
+        android:text="Edit Name"/>
+</LinearLayout>
