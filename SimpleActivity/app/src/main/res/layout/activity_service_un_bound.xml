@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.visualstudio.simpleactivity.demoservice.activitys.ServiceUnBoundActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Demo Service with Media Player"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/activity_service_un_bound_btn_startService"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Start Service"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickBtnStartService"/>
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/activity_service_un_bound_btn_stopService"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Stop Service"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickBtnStopService"/>
+</LinearLayout>

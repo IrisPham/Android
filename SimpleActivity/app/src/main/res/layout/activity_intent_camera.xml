@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.visualstudio.simpleactivity.LearnActivity.IntentCameraActivity">
+    tools:context="com.example.visualstudio.simpleactivity.demoactivity.activitys.IntentCameraActivity">
 
     <com.gc.materialdesign.views.ButtonRectangle
         android:id="@+id/activity_intent_camera_btn_takePicture"

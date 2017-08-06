@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.visualstudio.simpleactivity.democontentrrovider.StudentContentProviderActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Content provider Student"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/activity_student_content_provider_edt_namStudent"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên sinh viên" />
+
+    <EditText
+        android:id="@+id/activity_student_content_provider_edt_addressStudent"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Nhập địa chỉ sinh viên" />
+
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/activity_student_content_provider_btn_addStudent"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Thêm sinh viên"
+        android:onClick="onClickAddStudent"/>
+
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/activity_student_content_provider_btn_returnListStudent"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Trả về danh sách sinh viên trong SQLite"
+        android:onClick="onClickReturnListStudents" />
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/activity_student_content_provider_btn_deleteListStudent"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Xóa danh sách sinh viên trong SQLite"
+        android:onClick="onClickDeleteListStudents" />
+</LinearLayout>

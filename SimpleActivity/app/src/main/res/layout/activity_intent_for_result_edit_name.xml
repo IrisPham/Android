@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context="com.example.visualstudio.simpleactivity.LearnActivity.IntentForResultEditNameActivity">
+    tools:context="com.example.visualstudio.simpleactivity.demoactivity.activitys.IntentForResultEditNameActivity">
 
     <EditText
         android:id="@+id/activity_intent_for_result_edit_name_edt_userName"

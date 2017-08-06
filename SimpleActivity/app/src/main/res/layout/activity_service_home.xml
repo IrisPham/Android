@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dip"
+    android:gravity="center"
+    tools:context="com.example.visualstudio.simpleactivity.demoservice.activitys.ServiceHomeActivity">
+
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/activity_service_home_btn_unBoundService"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Demo UnBound Service"
+        android:onClick="onClickBtnDemoUnBoundService"/>
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/activity_service_home_boundService"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Demo Bound Service"
+        android:onClick="onClickBtnBoundService"/>
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/activity_service_home_intentService"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Demo Intent Service"
+        android:onClick="onClickBtnDemoIntentService"/>
+</LinearLayout>

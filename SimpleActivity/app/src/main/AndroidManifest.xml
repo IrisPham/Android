@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.visualstudio.simpleactivity">
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
@@ -11,23 +15,60 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LearnActivity.MainActivity" />
+        <activity android:name=".demoactivity.activitys.MainActivity" />
         <activity
-            android:name=".LearnActivity.DialogActivity"
+            android:name=".demoactivity.DialogActivity"
             android:theme="@android:style/Theme.Dialog" />
-        <activity android:name=".LearnContentProvider.ContentProviderActivity" />
-        <activity android:name=".Home.HomeActivity" />
-        <activity android:name=".Login.LoginActivity">
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LearnActivity.IntentImplicitItemActivity" />
-        <activity android:name=".LearnActivity.IntentForResultActivity" />
-        <activity android:name=".LearnActivity.IntentForResultEditNameActivity" />
-        <activity android:name=".LearnActivity.IntentCameraActivity"></activity>
+        <activity android:name=".demoactivity.activitys.IntentImplicitItemActivity" />
+        <activity android:name=".demoactivity.activitys.IntentForResultActivity" />
+        <activity android:name=".demoactivity.activitys.IntentForResultEditNameActivity" />
+        <activity android:name=".demoactivity.activitys.IntentCameraActivity" />
+
+        <!-- Register Provider by Androidmainfest -->
+        <provider
+            android:name=".democontentrrovider.StudentContentProvider"
+            android:authorities="com.example.visualstudio.simpleactivity.democontentrrovider" />
+
+        <activity android:name=".democontentrrovider.StudentContentProviderActivity" />
+        <activity android:name=".demoservice.activitys.ServiceHomeActivity" />
+
+        <service android:name=".demoservice.unboundservice.LocalService" />
+
+        <activity android:name=".demoservice.activitys.ServiceUnBoundActivity" />
+
+        <!-- Register Service by Androidmainfest -->
+        <service
+            android:name=".demoservice.boundservice.WeatherService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".demoservice.activitys.ServiceBoundActivity" />
+        <activity android:name=".demobroadcastreceiver.activitys.BroadCastReceiverHomeActivity" />
+
+        <!-- Register BroadCast by Androidmainfest -->
+        <receiver android:name=".demobroadcastreceiver.object.NetworkReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".demobroadcastreceiver.activitys.BroadCastReceiverJavaCodeActivity" />
+        <activity android:name=".demoservice.activitys.ServiceIntentActivity" />
+
+        <!-- Register Intent Service by Androidmainfest -->
+        <service
+            android:name=".demoservice.intentservice.MyIntentService"
+            android:exported="false" />
+
+        <activity android:name=".demowebservice.activitys.WebServiceMainActivity"></activity>
     </application>
 
 </manifest>

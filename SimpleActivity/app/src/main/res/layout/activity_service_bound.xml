@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    tools:context="com.example.visualstudio.simpleactivity.demoservice.activitys.ServiceBoundActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Demo Bound Service"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:textColor="@android:color/holo_blue_dark"/>
+    <EditText
+        android:id="@+id/activity_service_bound_edt_nameLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nhập địa điểm cần lấy thông tin thời tiết"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:id="@+id/activity_service_bound_tv_showWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=".............."
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/activity_service_bound_btn_showWeather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thời tiết hôm nay như thế nào?"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickBtnShowWeather"/>
+
+</LinearLayout>
