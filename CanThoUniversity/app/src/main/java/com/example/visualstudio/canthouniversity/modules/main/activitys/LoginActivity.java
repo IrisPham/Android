@@ -1,4 +1,4 @@
-package com.example.visualstudio.canthouniversity.activitys;
+package com.example.visualstudio.canthouniversity.modules.main.activitys;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
-import com.example.visualstudio.canthouniversity.MainActivity;
 import com.example.visualstudio.canthouniversity.R;
 
 public class LoginActivity extends AppCompatActivity {

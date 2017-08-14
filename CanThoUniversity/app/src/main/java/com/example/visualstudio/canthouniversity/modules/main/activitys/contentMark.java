@@ -1,4 +1,4 @@
-package com.example.visualstudio.canthouniversity.activitys;
+package com.example.visualstudio.canthouniversity.modules.main.activitys;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,8 +6,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.example.visualstudio.canthouniversity.R;
-import com.example.visualstudio.canthouniversity.adapters.ContentMarkAdapter;
-import com.example.visualstudio.canthouniversity.model.contentMarkModel;
+
+import com.example.visualstudio.canthouniversity.modules.main.adapters.ContentMarkAdapter;
+import com.example.visualstudio.canthouniversity.modules.main.model.contentMarkModel;
 
 import java.util.ArrayList;
 
@@ -34,7 +35,7 @@ public class contentMark extends AppCompatActivity {
         contentMarksList.add(new contentMarkModel("Mục IV: Điều 7. Đánh giá về ý thức công dân trong quan hệ cộng đồng"));
         contentMarksList.add(new contentMarkModel("Mục V: Điều 8. Đánh giá về ý thức và kết quả khi tham gia công tác cán bộ lớp, các đoàn thể, tổ chức trong nhà trường hoặc người học đạt được thành tích đặc biệt trong học tập, rèn luyện."));
 
-        ContentMarkAdapter  contentMarkAdapter = new ContentMarkAdapter(contentMarksList,getApplicationContext());
+        ContentMarkAdapter contentMarkAdapter = new ContentMarkAdapter(contentMarksList,getApplicationContext());
 
         recyclerView.setAdapter(contentMarkAdapter);
 

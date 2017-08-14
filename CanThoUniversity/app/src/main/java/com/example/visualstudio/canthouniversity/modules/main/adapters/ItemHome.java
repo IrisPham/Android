@@ -1,4 +1,4 @@
-package com.example.visualstudio.canthouniversity.adapters;
+package com.example.visualstudio.canthouniversity.modules.main.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;

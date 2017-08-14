@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.visualstudio.canthouniversity.modules.rateMark.activity.rateMarkMainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </LinearLayout>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textViewSemester"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:text="Học kì: "
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    />
+                <TextView
+                    android:id="@+id/textViewYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:text="Năm học:"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"/>
+                <Spinner
+                    android:id="@+id/spinner_list_semester"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    />
+                <Spinner
+                    android:id="@+id/spinner_list_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="1"/>
+            </GridLayout>
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/btnSearch"
+                android:layout_width="115dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="55dp"
+                android:text="Tìm">
+            </com.gc.materialdesign.views.ButtonRectangle>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/customshapeheadermarrk"
+            android:orientation="horizontal"
+            android:weightSum="7">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="STT"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Mã phiếu"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Tên phiếu"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="Tổng điểm rèn luyện"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Xếp loại"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Xem đánh giá"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Đánh giá"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="7">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="01"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="P20172"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Phiếu đánh giá HK 1 năm 2016-2017"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="80"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Tốt"
+                android:textColor="@android:color/black"/>
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/btnViewRateMark01"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp"/>
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/btnRateMark01"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="7">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="02"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="P20173"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Phiếu đánh giá HK 1 năm 2016-2017"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="80"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Tốt"
+                android:textColor="@android:color/black"/>
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/btnViewRateMark02"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp"/>
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/btnRateMark02"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="25dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

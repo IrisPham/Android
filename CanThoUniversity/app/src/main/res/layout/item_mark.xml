@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:padding="10dp"
     android:orientation="vertical"
-    tools:context="com.example.visualstudio.canthouniversity.adapters.item_mark">
+    tools:context=".modules.main.activitys.adapters.item_mark">
     <TextView
         android:id="@+id/textview_contentMark"
         android:layout_width="match_parent"

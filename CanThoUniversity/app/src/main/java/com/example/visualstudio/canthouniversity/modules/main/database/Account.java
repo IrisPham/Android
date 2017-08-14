@@ -1,7 +1,6 @@
-package com.example.visualstudio.canthouniversity.database;
+package com.example.visualstudio.canthouniversity.modules.main.database;
 
 import android.content.Context;
-import android.database.DatabaseErrorHandler;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 

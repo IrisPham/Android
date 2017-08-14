@@ -1,8 +1,12 @@
-package com.example.visualstudio.canthouniversity;
+package com.example.visualstudio.canthouniversity.modules.main.activitys;
 
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,10 +18,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.Toast;
 
-import com.example.visualstudio.canthouniversity.activitys.LoginActivity;
-import com.example.visualstudio.canthouniversity.activitys.TabMarkActivity;
-import com.example.visualstudio.canthouniversity.adapters.ItemHome;
+import com.example.visualstudio.canthouniversity.R;
+import com.example.visualstudio.canthouniversity.modules.main.adapters.ItemHome;
+import com.example.visualstudio.canthouniversity.modules.rateMark.activity.rateMarkMainActivity;
+import com.gc.materialdesign.views.ButtonRectangle;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -114,6 +120,7 @@ public class MainActivity extends AppCompatActivity
                 "Kết quả học tập", "Kết quả tốt nghiệp",
                 "Nghiên cứu khoa học", "Ký túc xá","Đánh giá điểm rèn luyện"
         };
+
         int[] gridViewImageId = {
                 R.drawable.ic_khtt, R.drawable.ic_dkhp,
                 R.drawable.ic_kqht, R.drawable.ic_kqtn,
@@ -121,7 +128,7 @@ public class MainActivity extends AppCompatActivity
                 R.drawable.ic_drl
         };
 
-        final GridView gridView = (GridView) findViewById(R.id.gridview);
+        GridView gridView = (GridView) findViewById(R.id.gridview);
         ItemHome itemHome = new ItemHome(this,arr,gridViewImageId);
         gridView.setAdapter(itemHome);
 
@@ -136,7 +143,23 @@ public class MainActivity extends AppCompatActivity
             }
         });
     }
+
     private void a(){
-        startActivity(new Intent(this,TabMarkActivity.class));
+        String[] arr = {"Kê khai chứng chỉ ngoại ngữ, tin học"
+                ,"Kê khai bài báo khoa học"
+                ,"Đánh giá điểm rèn luyện cá nhân"};
+        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+        builder.setTitle("Danh sách chỉ mục:")
+                .setItems(arr, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        switch (which){
+                            case 0:
+                            case 1:
+                            case 2:
+                                startActivity(new Intent(MainActivity.this,rateMarkMainActivity.class));
+                        }
+                    }
+                });
+        builder.show();
     }
 }

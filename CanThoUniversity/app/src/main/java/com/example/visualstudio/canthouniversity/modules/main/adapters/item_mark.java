@@ -1,9 +1,7 @@
-package com.example.visualstudio.canthouniversity.adapters;
+package com.example.visualstudio.canthouniversity.modules.main.adapters;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Toast;
 
 import com.example.visualstudio.canthouniversity.R;
 

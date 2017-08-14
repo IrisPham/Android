@@ -1,4 +1,4 @@
-package com.example.visualstudio.canthouniversity.model;
+package com.example.visualstudio.canthouniversity.modules.main.model;
 
 /**
  * Created by Visual Studio on 7/20/2017.

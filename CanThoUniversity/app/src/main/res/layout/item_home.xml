@@ -9,7 +9,7 @@
     android:padding="10dp"
 
     android:background="@drawable/customshape"
-    tools:context="com.example.visualstudio.canthouniversity.item_home">
+    tools:context="com.example.visualstudio.canthouniversity.modules.main.activitys.item_home">
 
     <ImageView
         android:id="@+id/image_logo"

@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -15,28 +16,30 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".modules.main.activitys.MainActivity"
             android:label="Trang chủ"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activitys.LoginActivity">
+        <activity android:name=".modules.main.activitys.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".item_home" />
-        <activity android:name=".adapters.item_mark" />
-        <activity android:name=".activitys.contentMark" />
+        <activity android:name=".modules.main.activitys.item_home" />
+        <activity android:name=".modules.main.activitys.contentMark" />
         <activity
-            android:name=".activitys.TabMarkActivity"
+            android:name=".modules.rateMark.activity.TabMarkActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/title_activity_tab_mark"
-            android:theme="@style/AppTheme"
             android:screenOrientation="landscape"
-            android:configChanges="keyboardHidden|orientation|screenSize">
-
-            </activity>
-        <activity android:name=".modules.rateMark.items.Items_row_Mark_Detail">
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name=".modules.rateMark.items.Items_row_Mark_Detail" />
+        <activity android:name=".modules.rateMark.activity.rateMarkMainActivity"
+            android:screenOrientation="landscape"
+            >
         </activity>
     </application>
 

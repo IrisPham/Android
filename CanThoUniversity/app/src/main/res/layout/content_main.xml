@@ -12,6 +12,6 @@
     android:horizontalSpacing="5dp"
     android:verticalSpacing="25dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.visualstudio.canthouniversity.MainActivity"
+    tools:context="com.example.visualstudio.canthouniversity.modules.main.activitys.MainActivity"
     tools:showIn="@layout/app_bar_main">
 </GridView>
