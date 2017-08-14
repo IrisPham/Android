@@ -154,26 +154,7 @@ public class TabMarkActivity extends AppCompatActivity {
             Toast.makeText(rootView.getContext(), ""+recyclerView.getChildCount(), Toast.LENGTH_SHORT).show();
             return rootView;
         }
-        public void getItem(){
-//            genres = new ArrayList<>();
-//            if(structureMarkList)
-//            List<ChildMark> ctMark = new ArrayList<>();
-//
-//            ctMark.add(new ChildMark("- Đi học đầy đủ, đúng giờ, nghiêm túc trong giờ học (Mỗi môn bị cấm thi trừ 03 điểm)","6",0,0,0,0));
-////            List<ChildMark> markLevel2sss = new ArrayList<>();
-////            markLevel2sss.add(new ChildMark("- Có tham gia đề tài NCKH của sinh viên hoặc của Khoa và cấp tương đương" +
-////                    ", có xác nhận của Chủ nhiệm đề tài (Không tính bài tập, tiểu luận, đồ án môn học, luận văn...)"));
-////            markLevel2sss.add(new ChildMark("- Có giấy khen về NCKH"));
-////            markLevel2sss.add(new ChildMark("- Có tham gia đề tài NCKH của sinh viên hoặc của Khoa và cấp tương đương" +
-////                    ", có xác nhận của Chủ nhiệm đề tài (Không tính bài tập, tiểu luận,luận đồ án môn học, luận văn...)"));
-//            genres.add(new ParentMark("Ý thức và thái độ trong học tập.",ctMark));
-
-//            genres.add(new ParentMark("Ý thức và thái độ tham gia các câu lạc bộ học thuật" +
-//                    ", các hoạt động học thuật" +
-//                    ", hoạt động ngoại khóa" +
-//                    ", hoạt động nghiên cứu khoa học.", markLevel2sss));
-        }
-
+        
     }
 
     private ArrayList<String> indexTitle = new ArrayList<>();
